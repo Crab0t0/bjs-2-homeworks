@@ -10,8 +10,7 @@ Student.prototype.setSubject = function (subjectName) {
 }
 
 Student.prototype.addMarks = function (...marksToAdd) {
-  if (!this.marks) {
-    console.log("Студент отчислен, оценки добавить нельзя.");
+  if (this.marks === undefined) {
     return;
   }
   this.marks.push(...marksToAdd);
