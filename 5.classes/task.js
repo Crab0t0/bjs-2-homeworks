@@ -1,4 +1,3 @@
-
 class PrintEditionItem {
   constructor(name, releaseDate, pagesCount) {
     this.name = name;
